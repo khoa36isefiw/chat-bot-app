@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="250dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_margin="13dp"
+    android:background="@drawable/radius_corner"
+    >
+
+
+    <ImageView
+        android:id="@+id/img_dialog"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:src="@drawable/logout"
+        android:layout_gravity="center"
+        android:layout_margin="13dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do You Really Want To \n Log Out?"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_margin="@dimen/_8sdp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_regular"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:background="@drawable/radius_corner"
+            android:text="No"
+            />
+
+        <Button
+            android:id="@+id/btn_yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Yes"
+            android:textSize="19dp"
+            android:background="@drawable/radius_corner"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
